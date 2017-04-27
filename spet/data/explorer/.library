@@ -2,7 +2,7 @@
 <library xmlns="http://www.sap.com/sap.ui.library.xsd" >
 
   <name>spet.data.explorer</name>
-  <version>0.9.0</version>
+  <version>0.9.1</version>
 
   <documentation>Data visualization controls.</documentation>
 

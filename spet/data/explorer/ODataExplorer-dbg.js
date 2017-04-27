@@ -72,9 +72,11 @@ sap.ui.define("spet/data/explorer/ODataExplorer", ["jquery.sap.global", "sap/ui/
      * @event
      * @name spet.data.explorer.ODataExplorer#addEntity
      * @property {string} entityPath The model path of the entity.
+     * @property {spet.data.explorer.Node} node The new node.
      */
 				addEntity: {
-					entityPath: { type: "string" }
+					entityPath: { type: "string" },
+					node: { type: "spet.data.explorer.Node" }
 				},
 
 				/**
@@ -341,9 +343,9 @@ sap.ui.define("spet/data/explorer/ODataExplorer", ["jquery.sap.global", "sap/ui/
     */
 			var fnAdd = function fnAdd(oNode, oContext) {
 				sPath = oContext.getPath();
-				if (_this2.fireEvent("addEntity", { entityPath: sPath }, true)) {
-					oNode.setKey(sPath);
-					oNode.setEntity(sPath);
+				oNode.setKey(sPath);
+				oNode.setEntity(sPath);
+				if (_this2.fireEvent("addEntity", { entityPath: sPath, node: oNode }, true)) {
 					oGraph.addNode(oNode);
 					oDeferred.resolve(oNode);
 				} else {
