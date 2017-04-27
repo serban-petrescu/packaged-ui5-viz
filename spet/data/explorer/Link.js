@@ -1,0 +1,1 @@
+sap.ui.define("spet/data/explorer/Link",["sap/ui/core/Element"],function(e){"use strict";return e.extend("spet.data.explorer.Link",{metadata:{properties:{label:{type:"string",defaultValue:""}},associations:{source:{type:"spet.data.explorer.Node",multiple:!1},target:{type:"spet.data.explorer.Node",multiple:!1}}}})});
