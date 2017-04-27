@@ -1,0 +1,21 @@
+{
+  "name": "spet-ui5-viz",
+  "homepage": "https://github.com/serban-petrescu/ui5-viz",
+  "authors": [
+    "Serban Petrescu <Serban.Petrescu@outlook.com>"
+  ],
+  "description": "Data visualization controls for OpenUI5",
+  "main": "",
+  "keywords": [
+    "openui5",
+    "visualization"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+	"README.md",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
