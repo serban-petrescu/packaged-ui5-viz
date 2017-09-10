@@ -70,6 +70,8 @@ sap.ui.define("spet/data/explorer/Graph", ["jquery.sap.global", "sap/ui/core/Con
      */
 				origins: { type: "spet.data.explorer.Node", multiple: true }
 			}
+
+			/** The underlying force layout. @private */
 		},
 		_force: null,
 		_g: null,
