@@ -26,6 +26,14 @@ sap.ui.define("spet/data/explorer/KeyLink", ["spet/data/explorer/Link"], functio
      */
 				targetKey: { type: "string", defaultValue: "" }
 			}
+
+			/**
+    * Finds the graph node which has the given key.
+    * @method spet.data.explorer.KeyLink#findNodeByKey
+    * @param {spet.data.explorer.Graph} oGraph The parent graph.
+    * @param {string} sKey The key used for the search.
+    * @returns {spet.data.explorer.Node|null} The found node or null if nothing was found.
+    */
 		},
 		findNodeByKey: function findNodeByKey(oGraph, sKey) {
 			var aNodes = oGraph.getNodes() || [];

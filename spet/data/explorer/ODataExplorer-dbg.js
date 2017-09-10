@@ -118,6 +118,12 @@ sap.ui.define("spet/data/explorer/ODataExplorer", ["jquery.sap.global", "sap/ui/
 					entityPath: { type: "string" }
 				}
 			}
+
+			/**
+    * Promise which is resolved when the model is available.
+    * @private
+    * @name spet.data.explorer.ODataExplorer#_modelPromise
+    */
 		},
 		_modelPromise: null,
 		_link: function _link(oGraph, sSource, sTarget, sLabel) {
